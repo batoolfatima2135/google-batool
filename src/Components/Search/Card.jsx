@@ -4,7 +4,7 @@ import React from 'react';
 export default function Card() {
   return (
 
-    <div className="border border-r-0 border-y-0 p-8">
+    <div className="border border-r-0 border-y-0 p-8 ">
       <Image
         src="/profile-pic.jpg"
         alt="profile-pic"
@@ -39,7 +39,7 @@ export default function Card() {
         </p>
         <p className="text-sm my-1">
           <b>Tools & methods: </b>
-          Git, GitHub, Chrome Dev Tools
+          Git, GitHub, Chrome Dev Tools, ESLint, Stylelint, RuboCop
         </p>
         <p className="text-sm my-1">
           <b>Professional: </b>
@@ -69,6 +69,5 @@ export default function Card() {
       </div>
 
     </div>
-
   );
 }
