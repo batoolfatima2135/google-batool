@@ -3,7 +3,7 @@ import Faq from '../../Components/Others/Faq';
 
 export default function Search() {
   return (
-    <div>
+    <div className='lg:m-6 m-2'>
       <Faq />
     </div>
   )

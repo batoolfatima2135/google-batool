@@ -24,10 +24,10 @@ export default function RootLayout({
   <div className=" col-span-1">
     
   </div>
-  <div className="col-span-5 ">
+  <div className="lg:col-span-5 col-span-7 md:col-span-5">
      {children}
   </div>
-  <div className="col-span-3 ">
+  <div className="col-span-3 hidden lg:block md:block">
     <Card />
   </div>
 </main>
