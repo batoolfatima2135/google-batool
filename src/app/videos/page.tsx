@@ -9,7 +9,7 @@ export default function Page() {
 
   return (
    
-       <div className="lg:m-6 m-2">
+       <div className="lg:m-6 m-2 overflow-x-hidden">
           {projects.map((project, projectindex) =>
             <div key={project.title} className='my-5 py-5'>
                <p className="text-xs text-gray-600 overflow-hidden">
@@ -26,28 +26,27 @@ export default function Page() {
                
               </a>
               <div className='grid grid-cols-1 lg:grid-cols-2  align-middle justify-center'>
-               <iframe
-                  className="col rounded-xl w-100 h-full"
-                  src={project.presentation}
-                  title={project.title}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                ></iframe>
-                <div className=' bg-red-400 justify-center col-1'>
-                  
-                   <p>{project.description}</p>
-                   <h3 className='text-sm font-bold mt-1' >Techstack: </h3>
-                    <div className="flex my-1 overflow-hidden">
-                     
-                  {project.techstack.map((tech, index) => (
-                    <img
-                      key={index}
-                      src={tech.image}
-                      alt={tech.name}
-                      className="w-3 lg:w-6"
-                    />
-                  ))}
-                </div>
+              <iframe
+    className="col rounded-xl "
+    src={project.presentation}
+    title={project.title}
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowFullScreen
+  ></iframe>
+  <div className="justify-center col">
+    <p className='lg:my-0 my-3  '>{project.description}</p>
+    <h3 className="text-sm font-bold mt-1">Techstack:</h3>
+    <div className="flex my-1 overflow-hidden">
+      {project.techstack.map((tech, index) => (
+        <img
+          key={index}
+          src={tech.image}
+          alt={tech.name}
+          className="w-7 lg:w-6"
+        />
+      ))}
+    </div>
+
                 </div>
               </div>
               
