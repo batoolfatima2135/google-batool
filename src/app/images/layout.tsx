@@ -18,7 +18,6 @@ export default function Layout(props: {
       <Header />
       <main>
         {props.children}
-       
 
       </main>
     </>

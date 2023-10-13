@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import React, { useContext, useState } from "react";
-import Image from "next/image";
-import Socials from "../../Components/Others/socials";
-import { Project, ProjectContext } from "../projectProvider";
+import React, { useContext, useState } from 'react';
+import Image from 'next/image';
+import Socials from '../../Components/Others/socials';
+import { Project, ProjectContext } from '../projectProvider';
 
 export default function Page() {
   const projects = useContext(ProjectContext);
@@ -21,46 +21,44 @@ export default function Page() {
   };
 
   const gridColClass = selectedProject
-    ? "hidden lg:block md:block col-span-3  max-h-screen "
-    : "col-span-5";
-  const gridColClassInner = selectedProject ? "col-span-3" : "col-span-2";
+    ? 'hidden lg:block md:block col-span-3  max-h-screen '
+    : 'col-span-5';
+  const gridColClassInner = selectedProject ? 'col-span-3' : 'col-span-2';
 
   return (
     <div className="grid grid-cols-5">
       <div className={` lg:m-7 m-3 overflow-y-auto ${gridColClass}`}>
         <div className="grid grid-cols-6 gap-4">
-          {projects.map((project) =>
-            project.images.map((image, imgindex) => (
-              <div key={imgindex} className={gridColClassInner}>
-                <a
-                  className="cursor-pointer"
-                  onClick={() => toggleDetails(project, imgindex)}
-                >
-                  <img
-                    src={`/projects_snapshots/${image}`}
-                    alt={`Project ${project.title} Image ${imgindex + 1}`}
-                    className="rounded-lg border border-gray-300"
-                  />
-                  <p className="text-xs lg:text-base font-medium my-1">
-                    {project.title}
-                  </p>
-                  <div className="flex my-1 overflow-hidden">
-                    {project.techstack.map((tech, index) => (
-                      <img
-                        key={index}
-                        src={tech.image}
-                        alt={tech.name}
-                        className="w-3 lg:w-6"
-                      />
-                    ))}
-                  </div>
-                  <p className="text-xs text-gray-600 overflow-hidden">
-                    {project.github}
-                  </p>
-                </a>
-              </div>
-            ))
-          )}
+          {projects.map((project) => project.images.map((image, imgindex) => (
+            <div key={imgindex} className={gridColClassInner}>
+              <a
+                className="cursor-pointer"
+                onClick={() => toggleDetails(project, imgindex)}
+              >
+                <img
+                  src={`/projects_snapshots/${image}`}
+                  alt={`Project ${project.title} Image ${imgindex + 1}`}
+                  className="rounded-lg border border-gray-300"
+                />
+                <p className="text-xs lg:text-base font-medium my-1">
+                  {project.title}
+                </p>
+                <div className="flex my-1 overflow-hidden">
+                  {project.techstack.map((tech, index) => (
+                    <img
+                      key={index}
+                      src={tech.image}
+                      alt={tech.name}
+                      className="w-3 lg:w-6"
+                    />
+                  ))}
+                </div>
+                <p className="text-xs text-gray-600 overflow-hidden">
+                  {project.github}
+                </p>
+              </a>
+            </div>
+          )))}
         </div>
       </div>
 
