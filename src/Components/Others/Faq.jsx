@@ -55,7 +55,7 @@ export default function Faq() {
 
   return (
     <div>
-      <h1 className="text-2xl font-medium my-3">People also ask</h1>
+      <h1 className="text-2xl font-medium my-5">People also ask</h1>
       <div>
         <ul>
           {questions.map((qa, index) => (

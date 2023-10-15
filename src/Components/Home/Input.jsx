@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 
 export default function Input() {
@@ -8,22 +8,6 @@ export default function Input() {
   const toggleDropdownVisibility = () => {
     setIsVisible(!isVisible);
   };
-  useEffect(() => {
-    const handleClickOutside = () => {
-      setIsVisible(false);
-    };
-
-    if (isVisible) {
-      document.addEventListener('mousedown', handleClickOutside);
-    } else {
-      document.removeEventListener('mousedown', handleClickOutside);
-    }
-
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, [isVisible]);
-
   return (
     <div className="relative  w-full">
       <div className="rounded-full p-1 px-2 border text-xs lg:text-base shadow-md  flex  w-full  hover:shadow-lg  ">
@@ -56,7 +40,7 @@ export default function Input() {
       >
         <ul>
           <li className="py-1">
-            <a href="about" className="flex items-center hover:text-blue-900">
+            <a href="/about" className="flex items-center hover:text-blue-900">
               <span className="mx-1">
                 <Image
                   src="/time.PNG"
@@ -70,7 +54,7 @@ export default function Input() {
 
           </li>
           <li className="py-1">
-            <a href="about" className="flex items-center hover:text-blue-900">
+            <a href="/about" className="flex items-center hover:text-blue-900">
               <span className="mx-1">
                 <Image
                   src="/time.PNG"
