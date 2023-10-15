@@ -25,34 +25,33 @@ export default function Page() {
 
                
               </a>
-              <div className='grid grid-cols-1 lg:grid-cols-2  align-middle justify-center'>
-              <iframe
-    className="col rounded-xl "
-    src={project.presentation}
-    title={project.title}
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowFullScreen
-  ></iframe>
-  <div className="justify-center col">
-    <p className='lg:my-0 my-3  '>{project.description}</p>
-    <h3 className="text-sm font-bold mt-1">Techstack:</h3>
-    <div className="flex my-1 overflow-hidden">
-      {project.techstack.map((tech, index) => (
-        <img
-          key={index}
-          src={tech.image}
-          alt={tech.name}
-          className="w-7 lg:w-6"
-        />
-      ))}
-    </div>
+              <div className='grid grid-cols-1 lg:grid-cols-2 align-middle justify-center'>
+                  <iframe
+                    className="col rounded-xl lg:w-full lg:h-60"
+                    src={project.presentation}
+                    title={project.title}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  ></iframe>
+                <div className="justify-center col  2xl:grid-cols-3 lg:mx-4">
+                  <p className='lg:my-0 my-3  '>{project.description}</p>
+                  <h3 className="text-sm font-bold mt-1">Techstack:</h3>
+                  <div className="flex my-1 overflow-hidden">
+                    {project.techstack.map((tech, index) => (
+                      <img
+                        key={index}
+                        src={tech.image}
+                        alt={tech.name}
+                        className="w-7 lg:w-6"
+                      />
+                     ))}
+                  </div>
 
                 </div>
+               </div>
+                            
+                            
               </div>
-              
-              
-                
-            </div>
 )}
 
 </div>
