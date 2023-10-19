@@ -54,7 +54,7 @@ export default function Input() {
 
           </li>
           <li className="py-1">
-            <a href="/about" className="flex items-center hover:text-blue-900">
+            <a href="/skills" className="flex items-center hover:text-blue-900">
               <span className="mx-1">
                 <Image
                   src="/time.PNG"
