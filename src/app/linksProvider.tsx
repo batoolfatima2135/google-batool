@@ -5,6 +5,7 @@ import Microverse from "../Components/Links/Microverse"
 import VU from "../Components/Links/VU"
 import TechnicalSkills from "../Components/Links/TechnicalSkills"
 import SoftSkills from "../Components/Links/SoftSkills"
+import Certification  from "../Components/Links/Certifications";
 
 
 export const LinkContext = createContext<LinksInterface[]>([]);
@@ -17,24 +18,28 @@ export interface LinksInterface {
 
 export default function LinksProvider({ children, initialLinks = [
   {
-    keywords: [],
+    keywords: ["about"],
     data: < Intro />
   },
   {
-    keywords: [],
+    keywords: ["about"],
     data: < Microverse />,
   },
   {
-    keywords: [],
+    keywords: ["about"],
     data: < VU />,
   },
   {
-    keywords: [],
+    keywords: ["about"],
     data: <TechnicalSkills />
   },
-   {
-    keywords: [],
+  {
+    keywords: ["about"],
     data: <SoftSkills />
+  },
+  {
+    keywords: ["about"],
+    data: <Certification />
   }
 ] } : {
   children: React.ReactNode;
