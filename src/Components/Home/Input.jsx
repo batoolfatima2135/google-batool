@@ -2,9 +2,18 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 export default function Input() {
+  const router = useRouter();
   const [isVisible, setIsVisible] = useState(false);
+  const [query, setQuery] = useState('');
+  const handleSubmit = (event) => {
+    if (event.key === 'Enter') {
+      router.push(`/search/${query}`);
+      setQuery('');
+    }
+  };
   const toggleDropdownVisibility = () => {
     setIsVisible(!isVisible);
   };
@@ -20,7 +29,14 @@ export default function Input() {
             height={40}
           />
         </span>
-        <input type="text" className="w-full outline-none" onClick={toggleDropdownVisibility} />
+        <input
+          type="text"
+          className="w-full outline-none"
+          onClick={toggleDropdownVisibility}
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          onKeyDown={handleSubmit}
+        />
         <span>
           <Image
             src="/icons.PNG"
