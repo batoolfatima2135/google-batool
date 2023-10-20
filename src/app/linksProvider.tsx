@@ -22,68 +22,82 @@ export default function LinksProvider({
   children,
   initialLinks = [
     {
-      keywords: ["about"],
+      keywords: ["about", "intro", "developer", "introduction", "pitch", "who", "detail", "details", "information", "bio", "profile"],
       data: <Intro />,
     },
     {
-      keywords: ["about"],
+      keywords: ["about", "introduction", "details", "knowledge", "information", "education", "microverse", "qualifications", "qualification", "Knowledge"
+      ],
       data: <Microverse />,
     },
     {
-      keywords: ["about"],
+      keywords: ["about","introduction", "details", "knowledge", "information", "education", "graduation", "university", "degree",
+      "qualifications", "qualification", "Knowledge", "graduate"],
       data: <VU />,
     },
     {
-      keywords: ["about"],
+      keywords: ["about", "skill", "set", "technical", "technology", "technologies", "knowledge", "proficiencies",
+      "capabilities", "tech"],
       data: <TechnicalSkills />,
     },
 
     {
-      keywords: ["about"],
+      keywords: ["about", "achievment", "achievements", "knowledge", "certificates", "certificate", "certification",
+      "microverse", "qualification", "qualifications"],
       data: <Certification />,
     },
     {
-      keywords: ["skills"],
+      keywords: ["skills", "set", "front-end", "frontend", "design", "developement", "skill", "ui", "user", "interface", "react",
+      "redux", "webpage", "website", "style", "html", "css", "javascript", "tailwind", "bootstrap", "designing"],
       data: <Frontend />,
     },
     {
-      keywords: ["skills"],
+      keywords: ["skills", "set", "development", "database", "back-end", "backend", "dynamic", "website", "webpage", "ruby", 
+      "rails", "postgresql", "logic", "rspec"],
       data: <Backend />,
     },
     {
-      keywords: ["about", "skills"],
+      keywords: ["about", "skills", "set", "solving", "creativity", "communication", "professional", "professionalism", "soft",
+      "interpersonal", "knowledge", "qualities", "behavioral", "collaboration", "adaptive", "people", "team", "teamwork", "leadership", "mentor"],
       data: <SoftSkills />,
     },
     {
-      keywords: ["work"],
+      keywords: ["work", "works", "project", "projects", "experience", "application", "applications", "development",
+      "react", "redux", "tailwind", "html", "css", "api", "javascript", "webpack", "jest", "git", "github", "eslint", "stylelint"],
       data: <WorkTemplate currentProject="Air pollution" />,
     },
     {
-      keywords: ["work"],
+      keywords: ["work", "works", "project", "projects", "experience", "application", "applications", "development",
+      "ruby", "rspec", "git", "github", "eslint", "stylelint", "rubocop"],
       data: <WorkTemplate currentProject="My catalog" />,
     },
     {
-      keywords: ["work"],
+      keywords: ["work", "works", "project", "projects", "experience", "application", "applications", "development",
+      "react", "redux", "tailwind", "html", "css", "javascript", "api", "webpack", "jest", "git", "github", "eslint", "stylelint"],
       data: <WorkTemplate currentProject="Shopping Cart" />,
     },
     {
-      keywords: ["work"],
+      keywords: ["work", "works", "project", "projects", "experience", "application", "applications", "development",
+       "react", "tailwind", "html", "css", "javascript", "api", "webpack", "jest", "git", "github", "eslint", "stylelint"],
       data: <WorkTemplate currentProject="Movie maze" />,
     },
     {
-      keywords: ["work"],
+      keywords: ["work", "works", "project", "projects", "experience", "application", "applications", "development",
+      "react", "redux", "tailwind", "html", "css", "javascript", "api", "webpack", "jest", "git", "github", "eslint", "stylelint"],
       data: <WorkTemplate currentProject="Space Traveler Hub " />,
     },
     {
-      keywords: ["work"],
+      keywords: ["work", "works", "project", "projects", "experience", "application", "applications", "development",
+      "react", "tailwind", "html", "css", "javascript", "api", "webpack", "jest", "git", "github", "eslint", "stylelint"],
       data: <WorkTemplate currentProject="To-do app React" />,
     },
     {
-      keywords: ["work"],
+      keywords: ["work", "works", "project", "projects", "experience", "application", "applications", "development",
+      "react", "tailwind", "html", "css", "javascript", "api", "webpack", "jest", "git", "github", "eslint", "stylelint"],
       data: <WorkTemplate currentProject="Math magician" />,
     },
     {
-      keywords: ["contact", "about", "skills", "work"],
+      keywords: ["contact", "about", "skills", "work", "message", "email", "touch", "reach"],
       data: <Contact />,
     },
   ],

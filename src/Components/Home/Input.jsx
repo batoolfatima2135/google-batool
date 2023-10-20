@@ -11,6 +11,7 @@ export default function Input() {
   const handleSubmit = (event) => {
     if (event.key === 'Enter') {
       router.push(`/search/${query}`);
+      setIsVisible(!isVisible);
       setQuery('');
     }
   };

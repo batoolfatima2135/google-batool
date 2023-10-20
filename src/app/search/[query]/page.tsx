@@ -6,14 +6,10 @@ import { LinkContext } from '@/app/linksProvider';
 
 export default function Search({ params }: { params: { query: string } }) {
   const AllLinks = useContext(LinkContext);
-const queryKeywords = params.query.toLowerCase().split('%20');
-console.log(queryKeywords)
-// Filter the links based on keyword matching
-const Links = AllLinks.filter(link => {
-  // Check if at least one of the query keywords is in the link's keywords
-  return queryKeywords.some(keyword => link.keywords.includes(keyword));
+  const queryKeywords = params.query.toLowerCase().split('%20');
+  const Links = AllLinks.filter(link => {
+    return queryKeywords.some(keyword => link.keywords.includes(keyword));
 });
-  console.log(Links)
   return (
     <div className="lg:m-6 m-2">
 
