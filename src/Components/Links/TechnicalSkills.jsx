@@ -141,13 +141,13 @@ export default function TechnicalSkills() {
         </p>
         <div>
           <h2 className=" md:text-lg text-lg font-semibold my-2">Techstack:</h2>
-          <div className="grid grid-cols-8 justify-center align-middle">
+          <div className="grid grid-cols-4 lg:grid-cols-8 justify-center align-middle">
             {techstack.map((tech) => (
               <div className="flex flex-col col items-center mb-4" key={tech.id}>
                 <img
                   src={tech.image}
                   alt={tech.name}
-                  className="w-3 lg:w-10"
+                  className="w-7 lg:w-10"
                 />
                 <p className="text-sm text-center">{tech.name}</p>
               </div>
@@ -156,13 +156,13 @@ export default function TechnicalSkills() {
         </div>
         <div>
           <h2 className=" md:text-lg text-lg font-semibold my-2">Tools:</h2>
-          <div className="grid grid-cols-8 justify-center align-middle">
+          <div className="grid grid-cols-4 lg:grid-cols-8 justify-center align-middle">
             {tools.map((tool) => (
-              <div className="flex flex-col col items-center mr-3" key={tool.id}>
+              <div className="flex flex-col col items-center mr-3 my-2" key={tool.id}>
                 <img
                   src={tool.image}
                   alt={tool.name}
-                  className="w-3 lg:w-10"
+                  className="w-7 lg:w-10"
                 />
                 <p className="text-sm text-center">{tool.name}</p>
               </div>
