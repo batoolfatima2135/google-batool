@@ -8,6 +8,7 @@ import SoftSkills from "../Components/Links/SoftSkills";
 import Certification from "../Components/Links/Certifications";
 import Frontend from "../Components/Links/Frontend";
 import Backend from "../Components/Links/Backend";
+import Contact from "../Components/Links/Contact";
 import WorkTemplate from "../Components/Links/WorkTemplate";
 
 export const LinkContext = createContext<LinksInterface[]>([]);
@@ -80,6 +81,10 @@ export default function LinksProvider({
     {
       keywords: ["work"],
       data: <WorkTemplate currentProject="Math magician" />,
+    },
+    {
+      keywords: ["contact", "about", "skills", "work"],
+      data: <Contact />,
     },
   ],
 }: {
