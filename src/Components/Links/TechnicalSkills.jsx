@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 export default function TechnicalSkills() {
   const [collapse, setcollapse] = useState(true);
@@ -144,10 +145,11 @@ export default function TechnicalSkills() {
           <div className="grid grid-cols-4 lg:grid-cols-8 justify-center align-middle">
             {techstack.map((tech) => (
               <div className="flex flex-col col items-center mb-4" key={tech.id}>
-                <img
+                <Image
                   src={tech.image}
                   alt={tech.name}
-                  className="w-7 lg:w-10"
+                  width={35}
+                  height={35}
                 />
                 <p className="text-sm text-center">{tech.name}</p>
               </div>
@@ -159,10 +161,11 @@ export default function TechnicalSkills() {
           <div className="grid grid-cols-4 lg:grid-cols-8 justify-center align-middle">
             {tools.map((tool) => (
               <div className="flex flex-col col items-center mr-3 my-2" key={tool.id}>
-                <img
+                <Image
                   src={tool.image}
                   alt={tool.name}
-                  className="w-7 lg:w-10"
+                  width={35}
+                  height={35}
                 />
                 <p className="text-sm text-center">{tool.name}</p>
               </div>
