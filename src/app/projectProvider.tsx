@@ -158,7 +158,7 @@ export default function ProjectProvider({
 
     {
       id: 3,
-      title: 'Space Travelers\' Hub ',
+      title: 'Space Traveler Hub ',
       images: ['space-1.PNG', 'space-2.PNG', 'space-3.PNG'],
       github: 'https://github.com/batoolfatima2135/Space',
       live: 'https://space-lemon-mu.vercel.app/',
