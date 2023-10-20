@@ -67,7 +67,7 @@ export default function Input() {
             </a>
           </li>
           <li className="py-1">
-            <a href="about" className="flex items-center hover:text-blue-900">
+            <a href="/work" className="flex items-center hover:text-blue-900">
               <span className="mx-1">
                 <Image
                   src="/time.PNG"
@@ -80,7 +80,7 @@ export default function Input() {
             </a>
           </li>
           <li className="py-1">
-            <a href="about" className="flex items-center hover:text-blue-900">
+            <a href="/videos" className="flex items-center hover:text-blue-900">
               <span className="mx-1">
                 <Image
                   src="/time.PNG"
@@ -93,7 +93,7 @@ export default function Input() {
             </a>
           </li>
           <li className="py-1">
-            <a href="about" className="flex items-center hover:text-blue-900">
+            <a href="contact" className="flex items-center hover:text-blue-900">
               <span className="mx-1">
                 <Image
                   src="/time.PNG"
