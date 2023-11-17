@@ -1,29 +1,23 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 export default function Input() {
+  const router = useRouter();
   const [isVisible, setIsVisible] = useState(false);
+  const [query, setQuery] = useState('');
+  const handleSubmit = (event) => {
+    if (event.key === 'Enter') {
+      router.push(`/search/${query}`);
+      setIsVisible(!isVisible);
+      setQuery('');
+    }
+  };
   const toggleDropdownVisibility = () => {
     setIsVisible(!isVisible);
   };
-  useEffect(() => {
-    const handleClickOutside = () => {
-      setIsVisible(false);
-    };
-
-    if (isVisible) {
-      document.addEventListener('mousedown', handleClickOutside);
-    } else {
-      document.removeEventListener('mousedown', handleClickOutside);
-    }
-
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, [isVisible]);
-
   return (
     <div className="relative  w-full">
       <div className="rounded-full p-1 px-2 border text-xs lg:text-base shadow-md  flex  w-full  hover:shadow-lg  ">
@@ -36,7 +30,14 @@ export default function Input() {
             height={40}
           />
         </span>
-        <input type="text" className="w-full outline-none" onClick={toggleDropdownVisibility} />
+        <input
+          type="text"
+          className="w-full outline-none"
+          onClick={toggleDropdownVisibility}
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          onKeyDown={handleSubmit}
+        />
         <span>
           <Image
             src="/icons.PNG"
@@ -56,7 +57,7 @@ export default function Input() {
       >
         <ul>
           <li className="py-1">
-            <a href="about" className="flex items-center hover:text-blue-900">
+            <a href="/about" className="flex items-center hover:text-blue-900">
               <span className="mx-1">
                 <Image
                   src="/time.PNG"
@@ -70,7 +71,7 @@ export default function Input() {
 
           </li>
           <li className="py-1">
-            <a href="about" className="flex items-center hover:text-blue-900">
+            <a href="/skills" className="flex items-center hover:text-blue-900">
               <span className="mx-1">
                 <Image
                   src="/time.PNG"
@@ -83,7 +84,7 @@ export default function Input() {
             </a>
           </li>
           <li className="py-1">
-            <a href="about" className="flex items-center hover:text-blue-900">
+            <a href="/work" className="flex items-center hover:text-blue-900">
               <span className="mx-1">
                 <Image
                   src="/time.PNG"
@@ -96,7 +97,7 @@ export default function Input() {
             </a>
           </li>
           <li className="py-1">
-            <a href="about" className="flex items-center hover:text-blue-900">
+            <a href="/videos" className="flex items-center hover:text-blue-900">
               <span className="mx-1">
                 <Image
                   src="/time.PNG"
@@ -109,7 +110,7 @@ export default function Input() {
             </a>
           </li>
           <li className="py-1">
-            <a href="about" className="flex items-center hover:text-blue-900">
+            <a href="contact" className="flex items-center hover:text-blue-900">
               <span className="mx-1">
                 <Image
                   src="/time.PNG"
