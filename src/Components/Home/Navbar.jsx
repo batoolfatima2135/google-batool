@@ -1,5 +1,5 @@
 import React from 'react';
-import Icon from '../Others/icon';
+import Icon from '../Others/Icon';
 import Links from '../Others/Links';
 import Profile from '../Others/Profile';
 
