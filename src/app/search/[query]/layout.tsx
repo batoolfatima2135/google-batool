@@ -1,11 +1,11 @@
-import type { Metadata } from "next";
-import Header from "../../../Components/Search/Header";
-import Card from "../../../Components/Search/Card";
+import type { Metadata } from 'next';
+import Header from '../../../Components/Search/Header';
+import Card from '../../../Components/Search/Card';
 
 export const metadata: Metadata = {
-  title: "Batool Fatima",
+  title: 'Batool Fatima',
   description:
-    "I am Batool Fatima, a Front-End developer, ready to embark on new challenges. With a solid foundation in Front-End technologies like JavaScript, React, and Redux I excel at creating efficient Web applications.Frontend: JavaScript, React, Redux, BootstrapTools & Methods: Git, GitHub, Chrome Dev Tools.Professional: Remote Pair-Programing, Teamwork, Mentoring",
+    'I am Batool Fatima, a Front-End developer, ready to embark on new challenges. With a solid foundation in Front-End technologies like JavaScript, React, and Redux I excel at creating efficient Web applications.Frontend: JavaScript, React, Redux, BootstrapTools & Methods: Git, GitHub, Chrome Dev Tools.Professional: Remote Pair-Programing, Teamwork, Mentoring',
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

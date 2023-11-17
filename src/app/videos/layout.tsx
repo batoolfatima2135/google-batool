@@ -20,7 +20,7 @@ export default function Layout({
         <div className="lg:col-span-6 col-span-7 md:col-span-6">
           {children}
         </div>
-    
+
       </main>
 
     </>
