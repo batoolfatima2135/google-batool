@@ -1,8 +1,8 @@
 'use client';
 
 import React, { useContext } from 'react';
-import { LinkContext } from '../linksProvider';
-import Faq from '../../Components/Others/Faq';
+import { LinkContext } from '../linksProvider.tsx';
+import Faq from '../../Components/Others/Faq.tsx';
 
 export default function About() {
   const links = useContext(LinkContext);

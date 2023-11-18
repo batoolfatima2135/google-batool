@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useContext } from 'react';
-import { LinkContext } from '../linksProvider';
+import { LinkContext } from '../linksProvider.tsx';
 import Faq from '../../Components/Others/Faq';
 
 export default function About() {
@@ -9,8 +9,8 @@ export default function About() {
   const aboutLinks = links.filter((link) => link.keywords.includes('about'));
   return (
     <div className="lg:m-6 m-2">
-      {aboutLinks.map((link, index) => (
-        <div key={index} className="py-2 my-3">
+      {aboutLinks.map((link) => (
+        <div key={link.id} className="py-2 my-3">
           {link.data}
         </div>
       ))}

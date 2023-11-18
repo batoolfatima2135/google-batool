@@ -1,8 +1,8 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import ProjectProvider from './projectProvider';
-import LinksProvider from './linksProvider';
+import ProjectProvider from './projectProvider.tsx';
+import LinksProvider from './linksProvider.tsx';
 
 const inter = Inter({ subsets: ['latin'] });
 

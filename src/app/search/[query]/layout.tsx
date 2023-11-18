@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
-import Header from '../../../Components/Search/Header';
-import Card from '../../../Components/Search/Card';
+import Header from '../../../Components/Search/Header.tsx';
+import Card from '../../../Components/Search/Card.tsx';
 
 export const metadata: Metadata = {
   title: 'Batool Fatima',

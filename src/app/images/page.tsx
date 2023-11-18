@@ -2,7 +2,7 @@
 
 import React, { useContext, useState } from 'react';
 import Image from 'next/image';
-import Socials from '../../Components/Others/socials';
+import Socials from '../../Components/Others/socials.tsx';
 import { Project, ProjectContext } from '../projectProvider';
 
 export default function Page() {

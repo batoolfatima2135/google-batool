@@ -1,8 +1,8 @@
 'use client';
 
 import React, { useState, useContext } from 'react';
-import { LinkContext } from '@/app/linksProvider';
-import Faq from '../../../Components/Others/Faq';
+import { LinkContext } from '@/app/linksProvider.tsx';
+import Faq from '../../../Components/Others/Faq.tsx';
 
 export default function Search({ params }: { params: { query: string } }) {
   const AllLinks = useContext(LinkContext);
