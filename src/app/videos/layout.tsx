@@ -8,9 +8,9 @@ export default function Layout({
   return (
     <>
       <Header />
-      <main className="grid grid-cols-9">
-        <div className=" col-span-1" />
-        <div className="lg:col-span-6 col-span-7 md:col-span-6">
+      <main className="grid gird-cols-8 lg:grid-cols-9">
+        <div className=" lg:col-span-1" />
+        <div className="lg:col-span-6 col-span-7  mx-3 md:col-span-6">
           {children}
         </div>
 

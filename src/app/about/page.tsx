@@ -8,7 +8,7 @@ export default function About() {
   const links = useContext(LinkContext);
   const aboutLinks = links.filter((link) => link.keywords.includes('about'));
   return (
-    <div className="lg:m-6 m-2">
+    <div className="lg:m-6">
       {aboutLinks.map((link) => (
         <div key={link.id} className="py-2 my-3">
           {link.data}
