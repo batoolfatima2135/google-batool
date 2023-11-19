@@ -31,9 +31,9 @@ export default function WorkTemplate({ currentProject }) {
         {project.title}
         &nbsp;is a project that is build with
         &nbsp;
-        {project.techstack.map((tech) => tech.name).join(', ')}
+        {project.techstack.map((tech) => tech.techName).join(', ')}
         &nbsp;using tools:&nbsp;
-        {project.tools.map((tool) => tool.name).join(', ')}
+        {project.tools.map((tool) => tool.techName).join(', ')}
       </p>
       <div
         className={`transition-all duration-300 my-5  ${
@@ -70,11 +70,11 @@ export default function WorkTemplate({ currentProject }) {
                 <div className="flex flex-col items-center m-3" key={tech.id}>
                   <Image
                     src={tech.image}
-                    alt={tech.name}
+                    alt={tech.techName}
                     width={35}
                     height={35}
                   />
-                  <p className="text-xs lg:text-sm text-center">{tech.name}</p>
+                  <p className="text-xs lg:text-sm text-center">{tech.techName}</p>
                 </div>
               ))}
             </div>

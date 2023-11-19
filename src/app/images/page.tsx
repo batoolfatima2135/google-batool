@@ -28,7 +28,7 @@ export default function Page() {
   return (
     <div className="grid grid-cols-5">
       <div className={` lg:m-7 m-3 overflow-y-auto ${gridColClass}`}>
-        <div className="grid grid-cols-6 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
           {projects.map((project) => project.images.map((image, imgindex) => (
             <div key={image} className={gridColClassInner}>
               <button
@@ -54,8 +54,8 @@ export default function Page() {
                     />
                   ))}
                 </div>
-                <p className="text-xs text-gray-600 overflow-hidden">
-                  {project.github}
+                <p className="text-xs text-gray-600 overflow-hidden text-left">
+                {project.github}
                 </p>
               </button>
             </div>

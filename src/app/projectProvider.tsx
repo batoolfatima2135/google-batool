@@ -25,17 +25,17 @@ const tools: Techstack[] = [
   {
     id: 0,
     image: '/techstack/git.png',
-     techName: 'Git',
+    techName: 'Git',
   },
   {
     id: 1,
     image: '/techstack/github.png',
-     techName: 'GitHub',
+    techName: 'GitHub',
   },
   {
     id: 2,
     image: '/techstack/stylelint.png',
-     techName: 'Stylelint',
+    techName: 'Stylelint',
   },
   {
     id: 3,
