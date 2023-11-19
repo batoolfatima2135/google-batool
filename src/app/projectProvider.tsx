@@ -135,7 +135,7 @@ export default function ProjectProvider({
   {
     id: 9,
     title: 'Driveasy',
-    images: ['driveasy-1.PNG', 'driveasy-2.PNG', 'driveasy-3.PNG', 'driveasy-4.PNG'],
+    images: ['driveasy-1.png', 'driveasy-2.png', 'driveasy-3.png', 'driveasy-4.png'],
     github: 'https://github.com/batoolfatima2135/Driveasy',
     live: 'https://driveasy.vercel.app/',
     description: 'An app for adding and managing your cars, booking vehicles, and accessing detailed car information with ease.',
@@ -146,7 +146,7 @@ export default function ProjectProvider({
   {
     id: 8,
     title: 'Budgetly',
-    images: ['budgetly-2.PNG', 'budgetly-1.PNG'],
+    images: ['budgetly-2.png', 'budgetly-1.png'],
     github: 'https://github.com/batoolfatima2135/budgetly',
     live: 'https://budgetly-ub3z.onrender.com',
     description: 'A mobile web application built on ruby on Rails where you can manage your budget: you have a list of transactions associated with a category to see how much money you spent and on what.',
@@ -157,7 +157,7 @@ export default function ProjectProvider({
   {
     id: 7,
     title: 'Recipe App',
-    images: ['recipe-1.PNG', 'recipe-2.PNG', 'recipe-3.PNG', 'recipe-4.PNG'],
+    images: ['recipe-1.png', 'recipe-2.png', 'recipe-3.png', 'recipe-4.png'],
     github: 'https://github.com/batoolfatima2135/Recipe-app',
     live: 'https://recipe-app-aep2.onrender.com/',
     description: 'An application that enables users to create recipes and choose whether to share them publicly or keep them private. Users can generate shopping lists, add food items, and incorporate these ingredients seamlessly into their recipes.',
