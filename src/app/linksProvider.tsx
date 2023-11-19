@@ -12,13 +12,12 @@ import Backend from '../Components/Links/Backend';
 import Contact from '../Components/Links/Contact';
 import WorkTemplate from '../Components/Links/WorkTemplate';
 
-export const LinkContext = createContext<LinksInterface[]>([]);
-
 export interface LinksInterface {
   id: number,
   keywords: string[];
   data: JSX.Element;
 }
+export const LinkContext = createContext<LinksInterface[]>([]);
 
 export default function LinksProvider({
   children,
@@ -114,7 +113,7 @@ export default function LinksProvider({
       data: <WorkTemplate currentProject="Math magician" />,
     },
     {
-      id: 15,
+      id: 16,
       keywords: ['contact', 'about', 'skills', 'work', 'message', 'email', 'touch', 'reach'],
       data: <Contact />,
     },

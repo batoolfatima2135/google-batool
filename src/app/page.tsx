@@ -1,8 +1,8 @@
-import Heading from '../Components/Home/Heading.jsx';
-import Navbar from '../Components/Home/Navbar.jsx';
-import Input from '../Components/Home/Input.jsx';
-import Buttons from '../Components/Home/Buttons.jsx';
-import Footer from '../Components/Home/Footer.jsx';
+import Heading from '../Components/Home/Heading';
+import Navbar from '../Components/Home/Navbar';
+import Input from '../Components/Home/Input';
+import Buttons from '../Components/Home/Buttons';
+import Footer from '../Components/Home/Footer';
 
 export default function Home() {
   return (

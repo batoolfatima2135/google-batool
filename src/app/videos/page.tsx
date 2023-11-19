@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useContext } from 'react';
-import { Project, ProjectContext } from '../projectProvider.tsx';
+import { ProjectContext } from '../projectProvider.tsx';
 
 export default function Page() {
   const projects = useContext(ProjectContext);
@@ -9,7 +9,7 @@ export default function Page() {
   return (
 
     <div className="lg:m-6 m-2 overflow-x-hidden">
-      {projects.map((project, projectindex) => (
+      {projects.map((project) => (
         <div key={project.title} className="my-5 py-5">
           <p className="text-xs text-gray-600 overflow-hidden">
             {project.github}
@@ -35,11 +35,11 @@ export default function Page() {
               <p className="lg:my-0 my-3  ">{project.description}</p>
               <h3 className="text-sm font-bold mt-1">Techstack:</h3>
               <div className="flex my-1 overflow-hidden">
-                {project.techstack.map((tech, index) => (
+                {project.techstack.map((tech) => (
                   <img
-                    key={index}
+                    key={tech.id}
                     src={tech.image}
-                    alt={tech.name}
+                    alt={tech.techName}
                     className="w-7 lg:w-6"
                   />
                 ))}

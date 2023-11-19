@@ -2,8 +2,8 @@
 
 import React, { useContext, useState } from 'react';
 import Image from 'next/image';
-import Socials from '../../Components/Others/socials.jsx';
-import { Project, ProjectContext } from '../projectProvider';
+import Socials from '../../Components/Others/socials';
+import { Project, ProjectContext } from '../projectProvider.tsx';
 
 export default function Page() {
   const projects = useContext(ProjectContext);
@@ -30,8 +30,9 @@ export default function Page() {
       <div className={` lg:m-7 m-3 overflow-y-auto ${gridColClass}`}>
         <div className="grid grid-cols-6 gap-4">
           {projects.map((project) => project.images.map((image, imgindex) => (
-            <div key={imgindex} className={gridColClassInner}>
-              <a
+            <div key={image} className={gridColClassInner}>
+              <button
+                type="button"
                 className="cursor-pointer"
                 onClick={() => toggleDetails(project, imgindex)}
               >
@@ -44,11 +45,11 @@ export default function Page() {
                   {project.title}
                 </p>
                 <div className="flex my-1 overflow-hidden">
-                  {project.techstack.map((tech, index) => (
+                  {project.techstack.map((tech) => (
                     <img
-                      key={index}
+                      key={tech.id}
                       src={tech.image}
-                      alt={tech.name}
+                      alt={tech.techName}
                       className="w-3 lg:w-6"
                     />
                   ))}
@@ -56,7 +57,7 @@ export default function Page() {
                 <p className="text-xs text-gray-600 overflow-hidden">
                   {project.github}
                 </p>
-              </a>
+              </button>
             </div>
           )))}
         </div>
@@ -85,15 +86,15 @@ export default function Page() {
                 Techstack
               </h2>
               <div className="flex">
-                {selectedProject.techstack.map((tech, index) => (
+                {selectedProject.techstack.map((tech) => (
                   <div className="flex flex-col items-center mr-3">
                     <img
-                      key={index}
+                      key={tech.id}
                       src={tech.image}
-                      alt={tech.name}
+                      alt={tech.techName}
                       className="w-3 lg:w-10"
                     />
-                    <p className="text-sm">{tech.name}</p>
+                    <p className="text-sm">{tech.techName}</p>
                   </div>
                 ))}
               </div>
@@ -104,15 +105,15 @@ export default function Page() {
                 Tools
               </h2>
               <div className="flex">
-                {selectedProject.tools.map((tool, index) => (
+                {selectedProject.tools.map((tool) => (
                   <div className="flex flex-col items-center mr-3">
                     <img
-                      key={index}
+                      key={tool.id}
                       src={tool.image}
-                      alt={tool.name}
+                      alt={tool.techName}
                       className="w-3 lg:w-10"
                     />
-                    <p className="text-sm text-center">{tool.name}</p>
+                    <p className="text-sm text-center">{tool.techName}</p>
                   </div>
                 ))}
               </div>

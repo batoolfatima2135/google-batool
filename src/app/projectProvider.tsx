@@ -3,7 +3,11 @@
 import { createContext } from 'react';
 
 // Create the context
-
+export interface Techstack{
+  id: number;
+  image: string;
+  techName: string;
+}
 export interface Project {
   id: number;
   title: string;
@@ -16,118 +20,113 @@ export interface Project {
   presentation: string;
 }
 
-interface Techstack{
-  id: number;
-  image: string;
-  name: string;
-}
 export const ProjectContext = createContext<Project[]>([]);
 const tools: Techstack[] = [
   {
     id: 0,
     image: '/techstack/git.png',
-    name: 'Git',
+     techName: 'Git',
   },
   {
     id: 1,
     image: '/techstack/github.png',
-    name: 'GitHub',
+     techName: 'GitHub',
   },
   {
     id: 2,
     image: '/techstack/stylelint.png',
-    name: 'Stylelint',
+     techName: 'Stylelint',
   },
   {
     id: 3,
     image: '/techstack/eslint.png',
-    name: 'ESLint',
+     techName: 'ESLint',
   },
   {
     id: 4,
     image: '/techstack/rubocop.png',
-    name: 'RuboCop',
+     techName: 'RuboCop',
   },
   {
     id: 5,
     image: '/techstack/chrome-devtool.png',
-    name: 'Chrome dev',
+     techName: 'Chrome dev',
   },
   {
     id: 6,
     image: '/techstack/rest.png',
-    name: 'RESTful API',
+     techName: 'RESTful API',
   }];
 const techstack: Techstack[] = [
   {
     id: 0,
     image: '/techstack/html.png',
-    name: 'HTML',
+     techName: 'HTML',
   },
   {
     id: 1,
     image: '/techstack/css.png',
-    name: 'CSS',
+     techName: 'CSS',
   },
   {
     id: 2,
     image: '/techstack/tailwind.png',
-    name: 'Tailwind',
+     techName: 'Tailwind',
   },
   {
     id: 3,
     image: '/techstack/bootstrap.png',
-    name: 'Bootstrap',
+     techName: 'Bootstrap',
   },
   {
     id: 4,
     image: '/techstack/javascript.png',
-    name: 'JavaScript',
+     techName: 'JavaScript',
   },
   {
     id: 5,
     image: '/techstack/jest.png',
-    name: 'Jest',
+     techName: 'Jest',
   },
   {
     id: 6,
     image: '/techstack/webpack.png',
-    name: 'Webpack',
+     techName: 'Webpack',
   },
   {
     id: 7,
     image: '/techstack/react.png',
-    name: 'React',
+     techName: 'React',
   },
   {
     id: 8,
     image: '/techstack/redux.png',
-    name: 'Redux toolkit',
+     techName: 'Redux toolkit',
   },
   {
     id: 9,
     image: '/techstack/nextjs.png',
-    name: 'Next.js',
+     techName: 'Next.js',
   },
   {
     id: 10,
     image: '/techstack/postgresql.png',
-    name: 'Postgresql',
+     techName: 'Postgresql',
   },
   {
     id: 11,
     image: '/techstack/ruby.png',
-    name: 'Ruby',
+     techName: 'Ruby',
   },
   {
     id: 12,
     image: '/techstack/rspec.png',
-    name: 'RSpec',
+     techName: 'RSpec',
   },
   {
     id: 13,
     image: '/techstack/rubyonrails.png',
-    name: 'Ruby on Rails',
+     techName: 'Ruby on Rails',
   },
 ];
 export default function ProjectProvider({

@@ -1,11 +1,5 @@
-import type { Metadata } from 'next';
-import Header from '../../Components/Search/Header.jsx';
-import Card from '../../Components/Search/Card.jsx';
-
-export const metadata: Metadata = {
-  title: 'Batool Fatima',
-  description: 'I am Batool Fatima, a Front-End developer, ready to embark on new challenges. With a solid foundation in Front-End technologies like JavaScript, React, and Redux I excel at creating efficient Web applications.Frontend: JavaScript, React, Redux, BootstrapTools & Methods: Git, GitHub, Chrome Dev Tools.Professional: Remote Pair-Programing, Teamwork, Mentoring',
-};
+import Header from '../../Components/Search/Header';
+import Card from '../../Components/Search/Card';
 
 export default function Layout({
   children,
