@@ -165,17 +165,7 @@ export default function ProjectProvider({
     tools: [tools[1], tools[4], tools[5]],
     presentation: 'https://www.youtube.com/embed/qMRlR0P-c74?si=PhUJf-9UAY9iR-bl',
   },
-  {
-    id: 6,
-    title: 'My catalog',
-    images: ['catalog-1.PNG', 'catalog-2.PNG', 'catalog-3.PNG', 'catalog-4.PNG'],
-    github: 'https://github.com/K0ppai/My-Catalog',
-    live: '',
-    description: 'My Catalog is a console app that will help you to keep a record of different types of things you own: books, music albums, and games. All data is stored and retrieve using json files',
-    techstack: [techstack[11], techstack[12]],
-    tools: [tools[1], tools[2], tools[3], tools[5], tools[6]],
-    presentation: 'https://www.youtube.com/embed/uI7x7itNxyg?si=QaxJDBSfz0II9FPN',
-  },
+ 
   {
     id: 6,
     title: 'Air pollution',
@@ -197,6 +187,17 @@ export default function ProjectProvider({
     techstack: [techstack[0], techstack[1], techstack[4], techstack[6], techstack[7], techstack[8]],
     tools: [tools[1], tools[2], tools[3], tools[5], tools[6]],
     presentation: 'https://www.youtube.com/embed/DW71BRahXUc?si=0KkuAOOMBQpod-W2',
+  },
+   {
+    id: 6,
+    title: 'My catalog',
+    images: ['catalog-1.PNG', 'catalog-2.PNG', 'catalog-3.PNG', 'catalog-4.PNG'],
+    github: 'https://github.com/K0ppai/My-Catalog',
+    live: '',
+    description: 'My Catalog is a console app that will help you to keep a record of different types of things you own: books, music albums, and games. All data is stored and retrieve using json files',
+    techstack: [techstack[11], techstack[12]],
+    tools: [tools[1], tools[2], tools[3], tools[5], tools[6]],
+    presentation: 'https://www.youtube.com/embed/uI7x7itNxyg?si=QaxJDBSfz0II9FPN',
   },
   {
     id: 4,
