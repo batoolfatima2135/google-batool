@@ -50,7 +50,7 @@ export default function Page() {
                       key={tech.id}
                       src={tech.image}
                       alt={tech.techName}
-                      className="w-3 lg:w-6"
+                      className="w-3 lg:w-6 mx-1"
                     />
                   ))}
                 </div>
