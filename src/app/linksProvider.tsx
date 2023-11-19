@@ -70,6 +70,27 @@ export default function LinksProvider({
         'interpersonal', 'knowledge', 'qualities', 'behavioral', 'collaboration', 'adaptive', 'people', 'team', 'teamwork', 'leadership', 'mentor'],
       data: <SoftSkills />,
     },
+     {
+      id: 9,
+      keywords: ['work', 'works', 'project', 'projects', 'experience', 'application', 'applications', 'development',
+        'ruby on rails', 'ror', 'backend', 'back-end', 'full-stack', 'fullstack', 'frontend' ,
+        'react', 'redux', 'tailwind', 'html', 'css', 'api', 'javascript', 
+        'webpack', 'jest', 'git', 'github', 'eslint', 'stylelint', 'rubocop', 'ruby', 
+        'tailwind', 'html', 'webpack', 'jest', 'git', 'github', 'eslint', 'stylelint'],
+      data: <WorkTemplate currentProject="Driveasy" />,
+    },
+    {
+      id: 9,
+      keywords: ['work', 'works', 'project', 'projects', 'experience', 'application', 'applications', 'development',
+        'ruby on rails', 'ror', 'backend', 'back-end', 'rubocop', 'ruby', 'tailwind', 'html', 'webpack', 'jest', 'git', 'github', 'eslint', 'stylelint'],
+      data: <WorkTemplate currentProject="Budgetly" />,
+    },
+     {
+      id: 9,
+      keywords: ['work', 'works', 'project', 'projects', 'experience', 'application', 'applications', 'development',
+        'ruby on rails', 'ror', 'backend', 'back-end', 'rubocop', 'ruby', 'tailwind', 'html', 'webpack', 'jest', 'git', 'github', 'eslint', 'stylelint'],
+      data: <WorkTemplate currentProject="Recipe App" />,
+    },
     {
       id: 9,
       keywords: ['work', 'works', 'project', 'projects', 'experience', 'application', 'applications', 'development',
