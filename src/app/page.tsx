@@ -1,8 +1,8 @@
-import Heading from '../Components/Home/Heading.tsx';
-import Navbar from '../Components/Home/Navbar.tsx';
-import Input from '../Components/Home/Input.tsx';
-import Buttons from '../Components/Home/Buttons.tsx';
-import Footer from '../Components/Home/Footer.tsx';
+import Heading from '../Components/Home/Heading.jsx';
+import Navbar from '../Components/Home/Navbar.jsx';
+import Input from '../Components/Home/Input.jsx';
+import Buttons from '../Components/Home/Buttons.jsx';
+import Footer from '../Components/Home/Footer.jsx';
 
 export default function Home() {
   return (

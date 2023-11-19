@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useContext } from 'react';
-import { Project, ProjectContext } from '../projectProvider';
+import { Project, ProjectContext } from '../projectProvider.tsx';
 
 export default function Page() {
   const projects = useContext(ProjectContext);

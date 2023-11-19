@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import Header from '../../Components/Search/Header.tsx';
+import Header from '../../Components/Search/Header.jsx';
 
 export const metadata: Metadata = {
   title: 'Batool Fatima',
