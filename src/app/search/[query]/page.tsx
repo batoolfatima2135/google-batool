@@ -2,7 +2,7 @@
 
 import React, { useState, useContext } from 'react';
 import { LinkContext } from '@/app/linksProvider.tsx';
-import Faq from '../../../Components/Others/Faq.tsx';
+import Faq from '../../../Components/Others/Faq.jsx';
 
 export default function Search({ params }: { params: { query: string } }) {
   const AllLinks = useContext(LinkContext);

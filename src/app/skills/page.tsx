@@ -2,7 +2,7 @@
 
 import React, { useContext } from 'react';
 import { LinkContext } from '../linksProvider.tsx';
-import Faq from '../../Components/Others/Faq.tsx';
+import Faq from '../../Components/Others/Faq.jsx';
 
 export default function About() {
   const links = useContext(LinkContext);
