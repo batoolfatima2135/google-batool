@@ -127,7 +127,7 @@ export default function Page() {
                 href={selectedProject.github}
                 className="underline text-blue-600"
               >
-                {selectedProject.github}
+                  github/batoolfatima2135/{selectedProject.title}
               </a>
             </div>
             <div className="flex">
