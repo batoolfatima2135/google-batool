@@ -85,16 +85,16 @@ export default function Page() {
               <h2 className="lg:text-xl md:text-lg text-lg font-semibold my-2">
                 Techstack
               </h2>
-              <div className="flex">
+              <div className="grid grid-cols-5">
                 {selectedProject.techstack.map((tech) => (
-                  <div className="flex flex-col items-center mr-3">
+                  <div className="col">
                     <img
                       key={tech.id}
                       src={tech.image}
                       alt={tech.techName}
-                      className="w-3 lg:w-10"
+                      className="w-10 mx-auto my-2"
                     />
-                    <p className="text-sm">{tech.techName}</p>
+                    <p className="text-sm text-center">{tech.techName}</p>
                   </div>
                 ))}
               </div>
@@ -104,14 +104,14 @@ export default function Page() {
               <h2 className="lg:text-xl md:text-lg text-lg font-semibold my-2">
                 Tools
               </h2>
-              <div className="flex">
+              <div className="grid grid-cols-5">
                 {selectedProject.tools.map((tool) => (
                   <div className="flex flex-col items-center mr-3">
                     <img
                       key={tool.id}
                       src={tool.image}
                       alt={tool.techName}
-                      className="w-3 lg:w-10"
+                      className="w-10 mx-auto my-2"
                     />
                     <p className="text-sm text-center">{tool.techName}</p>
                   </div>
@@ -121,7 +121,7 @@ export default function Page() {
             <h2 className="lg:text-xl md:text-lg text-lg font-semibold my-2">
               Links
             </h2>
-            <div className="flex">
+            <div className="flex flex-wrap">
               <h3 className="font-medium">Github:&nbsp;&nbsp;</h3>
               <a
                 href={selectedProject.github}
