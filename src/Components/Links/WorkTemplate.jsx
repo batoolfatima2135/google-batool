@@ -65,7 +65,7 @@ export default function WorkTemplate({ currentProject }) {
             <h2 className="lg:text-xl md:text-lg text-lg font-semibold my-2">
               Techstack
             </h2>
-            <div className="grid grid-cols-4 lg:grid-cols-9 justify-center">
+            <div className="grid grid-cols-5 lg:grid-cols-9 justify-center">
               {project.techstack.map((tech) => (
                 <div className="flex flex-col items-center m-3" key={tech.id}>
                   <Image
@@ -83,9 +83,9 @@ export default function WorkTemplate({ currentProject }) {
             <h2 className="lg:text-xl md:text-lg text-lg font-semibold my-2">
               Tools
             </h2>
-            <div className="grid grid-cols-4 lg:grid-cols-9 justify-center">
+            <div className="grid grid-cols-6 lg:grid-cols-9 justify-center">
               {project.tools.map((tool) => (
-                <div className="flex flex-col items-center mr-3" key={tool.id}>
+                <div className="flex flex-col items-center m-3" key={tool.id}>
                   <Image
                     src={tool.image}
                     alt={tool.name}
