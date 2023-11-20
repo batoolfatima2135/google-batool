@@ -35,7 +35,7 @@ export default function Frontend() {
           and highly functional backend systems.
         </p>
 
-        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-7 my-5 ">
+        <div className="grid grid-cols-4 md:grid-cols-4 lg:grid-cols-7 my-5 ">
           <div className="m-2  lg:m-3">
             <Image
               className="mx-auto"

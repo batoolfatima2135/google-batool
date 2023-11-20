@@ -33,7 +33,7 @@ export default function Frontend() {
           I am dedicated to creating web solutions that not only meet but exceed user expectations.
         </p>
 
-        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-8 my-5 ">
+        <div className="grid grid-cols-4 md:grid-cols-4 lg:grid-cols-8 my-5 ">
           <div className="m-2  lg:m-3">
             <Image
               className="mx-auto"
