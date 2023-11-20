@@ -106,7 +106,7 @@ export default function WorkTemplate({ currentProject }) {
               href={project.github}
               className="underline text-blue-600"
             >
-              {project.github}
+              github/batoolfatima2135/{project.title}
             </a>
           </div>
           {project.live && (
