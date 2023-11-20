@@ -92,7 +92,7 @@ export default function WorkTemplate({ currentProject }) {
                     width={35}
                     height={35}
                   />
-                  <p className="text-xs lg:text-sm text-center">{tool.name}</p>
+                  <p className="text-xs lg:text-sm text-center">{tool.techName}</p>
                 </div>
               ))}
             </div>
