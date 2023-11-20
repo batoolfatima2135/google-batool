@@ -36,7 +36,7 @@ export default function Frontend() {
         </p>
 
         <div className="grid grid-cols-4 md:grid-cols-4 lg:grid-cols-7 my-5 ">
-          <div className="m-2  lg:m-3">
+          <div className="m-2  lg:m-3 text-center">
             <Image
               className="mx-auto"
               src="/techstack/ruby.png"
