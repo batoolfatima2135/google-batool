@@ -10,7 +10,7 @@ export default function Footer() {
         <li className="lg:mx-2 mx-1"><a target="_blank" href="https://github.com/batoolfatima2135" rel="noreferrer">Github</a></li>
       </ul>
       <ul className="flex justify-end text-xs lg:text-sm text-gray-500">
-        <li className="lg:mx-2 mx-1"><a href="Contact">Contact</a></li>
+        <li className="lg:mx-2 mx-1"><a href="contact">Contact</a></li>
         <li className="lg:mx-2 mx-1"><a href="mailto:batoolfatima2135@gmail.com">Email</a></li>
         <li className="lg:mx-2 mx-1"><a href="./Batool_Fatima_Resume.pdf" target="_blank">Resume</a></li>
       </ul>
