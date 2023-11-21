@@ -18,7 +18,7 @@ export default function Home() {
           <Buttons />
           <p className=" text-xs lg:text-sm m-3">
             Google offered in:
-            <a href="./Resume.pdf" target="_blank" className="text-blue-900">Batool</a>
+            <a href="./Batool_Fatima_Resume.pdf" target="_blank" className="text-blue-900">Batool</a>
           </p>
         </main>
       </div>

@@ -12,7 +12,7 @@ export default function Footer() {
       <ul className="flex justify-end text-xs lg:text-sm text-gray-500">
         <li className="lg:mx-2 mx-1"><a href="Contact">Contact</a></li>
         <li className="lg:mx-2 mx-1"><a href="mailto:batoolfatima2135@gmail.com">Email</a></li>
-        <li className="lg:mx-2 mx-1"><a href="./Resume.pdf" target="_blank">Resume</a></li>
+        <li className="lg:mx-2 mx-1"><a href="./Batool_Fatima_Resume.pdf" target="_blank">Resume</a></li>
       </ul>
     </footer>
   );

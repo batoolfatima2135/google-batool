@@ -48,7 +48,7 @@ export default function Card() {
 
         <p className="text-sm my-1 mt-4">
           <b>Resume: </b>
-          <a href="./Resume.pdf" target="_blank" className="text-blue-600 underline hover:text-blue-800 hover:underline visited:text-purple-600">download</a>
+          <a href="./Batool_Fatima_Resume.pdf" target="_blank" className="text-blue-600 underline hover:text-blue-800 hover:underline visited:text-purple-600">download</a>
         </p>
         <p className="text-sm my-1">
           <b>Email: </b>
