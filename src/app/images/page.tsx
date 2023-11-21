@@ -126,19 +126,23 @@ export default function Page() {
               <a
                 href={selectedProject.github}
                 className="underline text-blue-600"
+                target='_blank'
               >
                   github/batoolfatima2135/{selectedProject.title}
               </a>
             </div>
-            <div className="flex">
+            {selectedProject.live && <div className="flex">
               <h3 className="font-medium">Live:&nbsp;&nbsp;</h3>
               <a
                 href={selectedProject.live}
                 className="underline text-blue-600"
+                target='_blank'
               >
                 {selectedProject.live}
               </a>
             </div>
+            }
+        
             <div className="mt-5">
               <Socials />
             </div>
