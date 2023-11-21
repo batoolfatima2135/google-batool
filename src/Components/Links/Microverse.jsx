@@ -28,7 +28,7 @@ export default function Microverse() {
           collapse ? 'max-h-0 mt-0 mb-0 overflow-hidden' : ' mb-3'
         } text-gray-600 rounded-md `}
       >
-        <a href="https://www.microverse.org/" className="my-1">
+        <a href="https://www.microverse.org/"  target='_blank' className="my-1">
           <div className="flex my-4 items-center">
             <Image
               src="/microverse.png"
@@ -43,15 +43,6 @@ export default function Microverse() {
         </a>
 
         <ul className="list-disc list-outside">
-          <li className="my-2">
-            Spent 1300+ hours mastering algorithms, data structures, and full-stack
-            development whilesimultaneously developing projects with Ruby, Rails,
-            JavaScript, React, and Redux.
-          </li>
-          <li className="my-2">
-            Developed skills in remote pair programming using GitHub, industry-standard git-flow,
-            and daily standups to communicate and collaborate with international remote developers.
-          </li>
           <li className="my-2">
             Spent 1300+ hours mastering algorithms, data structures,
             and full-stack development while simultaneously developing projects with Ruby,

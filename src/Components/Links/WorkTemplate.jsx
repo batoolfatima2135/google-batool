@@ -29,7 +29,7 @@ export default function WorkTemplate({ currentProject }) {
       </button>
       <p className="text-sm  text-gray-600">
         {project.title}
-        &nbsp;is a project that is build with
+        &nbsp;is a project that is built with
         &nbsp;
         {project.techstack.map((tech) => tech.techName).join(', ')}
         &nbsp;using tools:&nbsp;
@@ -105,6 +105,7 @@ export default function WorkTemplate({ currentProject }) {
             <a
               href={project.github}
               className="underline text-blue-600"
+              target='_blank'
             >
               {project.github}
             </a>
@@ -112,7 +113,7 @@ export default function WorkTemplate({ currentProject }) {
           {project.live && (
           <div className="lg:flex">
             <h3 className="font-medium">Live:&nbsp;&nbsp;</h3>
-            <a href={project.live} className="underline text-blue-600">
+            <a href={project.live} target='_blank' className="underline text-blue-600">
               {project.live}
             </a>
           </div>

@@ -13,12 +13,13 @@ export default function Page() {
     // Check if presentation is not empty
     project.presentation && (
       <div key={project.title} className="py-2">
-        <a href={project.github} className="text-xs text-gray-600 overflow-hidden hover:underline">
+        <a href={project.github} className="text-xs text-gray-600 overflow-hidden hover:underline" target='_blank'>
           {project.github}
         </a>
         <a
           href={project.presentation}
           className="text-blue-600 underline text-xl"
+          target='_blank'
         >
           <p className="font-medium mb-2">
             {project.title}

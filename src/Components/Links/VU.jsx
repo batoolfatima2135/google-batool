@@ -28,7 +28,7 @@ export default function VU() {
           collapse ? 'max-h-0 mt-0 mb-0 overflow-hidden' : ' mb-3'
         } text-gray-600 rounded-md `}
       >
-        <a href="https://www.vu.edu.pk" className="my-1">
+        <a href="https://www.vu.edu.pk"  target='_blank' className="my-1">
           <div className="flex my-4 items-center">
             <Image
               src="/vu.png"
