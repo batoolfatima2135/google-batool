@@ -3,6 +3,7 @@
 import React, { useContext, useState } from 'react';
 import Image from 'next/image';
 import Socials from '../../Components/Others/socials';
+import { motion } from 'framer-motion';
 import { Project, ProjectContext } from '../projectProvider.tsx';
 
 export default function Page() {
@@ -21,13 +22,19 @@ export default function Page() {
   };
 
   const gridColClass = selectedProject
-    ? 'hidden lg:block md:block col-span-3  max-h-screen '
+    ? 'hidden lg:block md:block col-span-3 max-h-screen'
     : 'col-span-5';
   const gridColClassInner = selectedProject ? 'col-span-3' : 'col-span-2';
 
   return (
     <div className="grid grid-cols-5">
-      <div className={` lg:m-7 m-3 overflow-y-auto ${gridColClass}`}>
+      <motion.div
+        className={` lg:m-7 m-3 overflow-y-auto ${gridColClass}`}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -20 }}
+        transition={{ duration: 0.3 }}
+      >
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
           {projects.map((project) => project.images.map((image, imgindex) => (
             <div key={image} className={gridColClassInner}>
@@ -61,11 +68,17 @@ export default function Page() {
             </div>
           )))}
         </div>
-      </div>
+      </motion.div>
 
       {/* Project Details Panel */}
       {selectedProject && (
-        <div className="col-span-5 lg:col-span-2 md:col-span-2 m-3 overflow-y-auto">
+         <motion.div
+            className="col-span-5 lg:col-span-2 md:col-span-2 m-3 overflow-y-auto"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.3 }}
+          >
           <button onClick={close} className="float-right p-3">
             <Image
               src="/close.png"
@@ -147,7 +160,7 @@ export default function Page() {
               <Socials />
             </div>
           </div>
-        </div>
+        </motion.div>
       )}
     </div>
   );

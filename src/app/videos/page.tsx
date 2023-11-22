@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useContext } from 'react';
+import { motion } from 'framer-motion';
 import { ProjectContext } from '../projectProvider.tsx';
 
 export default function Page() {
@@ -8,7 +9,13 @@ export default function Page() {
 
   return (
 
-   <div className="lg:m-6 m-2 overflow-x-hidden">
+   <motion.div 
+        className="lg:m-6 m-2 overflow-x-hidden"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -20 }}
+        transition={{ duration: 0.3 }}
+   >
   {projects.map((project) => (
     // Check if presentation is not empty
     project.presentation && (
@@ -53,7 +60,7 @@ export default function Page() {
       </div>
     )
   ))}
-</div>
+</motion.div>
 
   );
 }
