@@ -1,4 +1,4 @@
-<img src="./cover.jpg" width = "100%" >
+<img src="/cover.jpg" width = "100%" >
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=&size=35&pause=300&color=0099FF&background=DA02FF00&center=true&width=635&height=70&lines=Welcome+to+my+Portfolio!" alt="Typing SVG" /></a>
 <p>I'm a passionate software developer who loves transforming ideas into digital solutions. I love to <b>think out of the box</b> and love to take challenges. My strong problem-solving skills enable me to analyze complex problems and develop solutions. I believe <b>self-growth</b> and <b>giving up is not an option</b> for me.</p>
 
