@@ -20,12 +20,6 @@ export default function Input() {
     setIsVisible(!isVisible);
   };
 
-  useEffect(() => {
-    if (window.location.pathname == "/") {
-    setIsVisible(true);
-    setQuery("Batool Fatima")
-    }
-  })
   return (
     <div className="relative  w-full">
       <div className="rounded-full p-1 px-2 border text-xs lg:text-base shadow-md  flex  w-full  hover:shadow-lg  ">
