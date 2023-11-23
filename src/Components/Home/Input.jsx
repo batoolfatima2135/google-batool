@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 
@@ -8,6 +8,7 @@ export default function Input() {
   const router = useRouter();
   const [isVisible, setIsVisible] = useState(false);
   const [query, setQuery] = useState('');
+ 
   const handleSubmit = (event) => {
     if (event.key === 'Enter') {
       router.push(`/search/${query}`);
@@ -18,6 +19,13 @@ export default function Input() {
   const toggleDropdownVisibility = () => {
     setIsVisible(!isVisible);
   };
+
+  useEffect(() => {
+    if (window.location.pathname == "/") {
+    setIsVisible(true);
+    setQuery("Batool Fatima")
+    }
+  })
   return (
     <div className="relative  w-full">
       <div className="rounded-full p-1 px-2 border text-xs lg:text-base shadow-md  flex  w-full  hover:shadow-lg  ">
