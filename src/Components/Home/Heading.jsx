@@ -10,7 +10,7 @@ export default function Heading() {
       <span className="text-blue-500">g</span>
       <span className="text-green-600">l</span>
       <span className="text-red-500">e</span>
-      <span> </span>
+      <span></span>
       <span className="text-blue-500">B</span>
       <span className="text-red-500">a</span>
       <span className="text-blue-500">t</span>
