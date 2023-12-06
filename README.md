@@ -6,7 +6,7 @@
 * 🧠  I'm learning Next.js
 * 🤝  Currently seeking new opportunities 
 
-<p>My expertise includes designing responsive and visually appealing user interfaces and connecting them with efficient backends, optimizing database and website performance. I'm a strong advocate for collaboration, teamwork, and constant learning. </p>
+<p>My expertise includes designing responsive and visually appealing user interfaces and connecting them with efficient backends, optimizing database and website performance. I'm a strong advocate for collaboration, teamwork, and constant learning. This is my portfolio with little different approach </p>
 
 <p>I thrive in collaborative team environments, bringing dedication, leadership qualities, rapid learning, and a passion for challenges to the table. Challenges, though initially frustrating, serve as invaluable teachers in the long run. 🚀
 
