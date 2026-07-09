@@ -1,5 +1,6 @@
 'use client';
 
+import { email } from '@/static/links';
 import React, { useState } from 'react';
 
 export default function Contact() {
@@ -32,7 +33,7 @@ export default function Contact() {
           If you believe you have something interesting to offer, please don&apos;t hesitate
           to contact me via my email address at
           &nbsp;
-          <a href="mailto:batoolfatima2135@gmail.com" className="text-blue-700 underline">batoolfatima2135@gmail.com</a>
+          <a href={email} className="text-blue-700 underline">batoolfatima2135@gmail.com</a>
            &nbsp;and you can also use the provided form to send me a message directly.
         </p>
         <form
