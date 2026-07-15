@@ -19,11 +19,12 @@ export default function Home() {
           <Buttons />
           <p className=" text-xs lg:text-sm m-3">
             Google offered in:
-            <a href={resume} target="_blank" className="text-blue-900">Batool</a>
+            <a href={resume} target="_blank" className="text-blue-900">
+              Batool
+            </a>
           </p>
         </main>
       </div>
-      <p className=" text-xs lg:text-sm text-gray-900 p-5">Pakistan</p>
       <Footer />
     </div>
   );
