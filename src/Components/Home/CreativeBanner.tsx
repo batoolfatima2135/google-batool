@@ -48,7 +48,7 @@ export default function CreativeBanner() {
             </span>
             <span>
               This is my google inspired personal portfolio where you can
-              explore my projects, skills, and journey 🚀"
+              explore my projects, skills, and journey 🚀
             </span>
           </div>
         </motion.div>
