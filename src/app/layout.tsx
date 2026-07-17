@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import ProjectProvider from './projectProvider.tsx';
 import LinksProvider from './linksProvider.tsx';
+import CreativeBanner from '@/Components/Home/CreativeBanner.tsx';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <CreativeBanner />
         <ProjectProvider>
           <LinksProvider>{children}</LinksProvider>
         </ProjectProvider>
