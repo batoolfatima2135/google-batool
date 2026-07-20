@@ -2,97 +2,119 @@
 
 import React, { useState } from 'react';
 
-export default function SoftSkills() {
-  const [collapse, setcollapse] = useState(true);
-  const toggleCollapse = () => {
-    setcollapse(!collapse);
-  };
-  const softSkills = [
-    {
-      title: '💡 Problem-Solving',
-      details: 'I  often encounter complex technical challenges. Being able to analyze problems and devise effective solutions is crucial.',
-    },
-    {
-      title: '🔄 Adaptability',
-      details: 'Technology evolves rapidly. I am adaptable and open to learning new languages, frameworks, and tools.',
-    },
-    {
-      title: '🗣️ Communication',
-      details: 'Effective communication is essential when working in a team. You need to explain your ideas, share progress, and understand the requirements and feedback from non-technical stakeholders.',
-    },
-    {
-      title: '⏰ Time Management',
-      details: 'Balancing front-end and back-end development can be challenging. Good time management ensures you meet deadlines and prioritize tasks effectively.',
-    },
-    {
-      title: '🔍 Attention to Detail',
-      details: 'Small mistakes in coding can lead to significant issues. A keen eye for detail is important for writing clean and error-free code.',
-    },
-    {
-      title: '🤝 Collaboration',
-      details: 'I often work in multidisciplinary teams. Being a team player and collaborating well with designers, other developers, and project managers is crucial.',
-    },
-    {
-      title: '🎨 Creativity',
-      details: ' Understanding the end-user needs and creating user-friendly applications is a key aspect of full stack development.',
-    },
-    {
-      title: '💪 Resilience',
-      details: ' Facing technical challenges and bugs is part of the job. Staying patient and resilient in troubleshooting and debugging is important.',
-    },
-    {
-      title: '📚 Continuous Learning',
-      details: 'The tech industry is dynamic. That is why I always strive to continuously learn and stay up-to-date with the latest trends and best practices.',
-    },
-    {
-      title: '🤔 Critical Thinking',
-      details: 'The ability to evaluate different solutions and make informed decisions is valuable in full stack development.',
-    },
-    {
-      title: '🏆 Leadership',
-      details: 'I always thrive in taking the lead or mentoring junior team members.',
-    },
+const softSkills = [
+  {
+    icon: '💡',
+    title: 'Problem Solving',
+    details:
+      'I enjoy analyzing complex technical challenges and delivering practical, scalable, and maintainable solutions.',
+  },
+  {
+    icon: '🤝',
+    title: 'Team Collaboration',
+    details:
+      'Experienced working closely with developers, designers, QA engineers, and product teams in Agile environments.',
+  },
+  {
+    icon: '🗣️',
+    title: 'Communication',
+    details:
+      'I communicate technical concepts clearly, actively participate in discussions, and value constructive feedback.',
+  },
+  {
+    icon: '🔄',
+    title: 'Adaptability',
+    details:
+      'Quick to learn new technologies, frameworks, and development practices to meet evolving project needs.',
+  },
+  {
+    icon: '📚',
+    title: 'Continuous Learning',
+    details:
+      'Passionate about improving my technical skills and staying current with modern technologies and industry best practices.',
+  },
+  {
+    icon: '⏰',
+    title: 'Time Management',
+    details:
+      'Able to prioritize tasks effectively, manage multiple responsibilities, and consistently meet deadlines.',
+  },
+  {
+    icon: '🏆',
+    title: 'Leadership',
+    details:
+      'Comfortable taking ownership of features, driving initiatives, and supporting teammates when needed.',
+  },
+  {
+    icon: '👩‍🏫',
+    title: 'Mentoring',
+    details:
+      'Enjoy sharing knowledge, helping teammates overcome technical challenges, and encouraging collaborative learning.',
+  },
+  {
+    icon: '🚀',
+    title: 'Ownership',
+    details:
+      'Take responsibility for delivering reliable, maintainable, and high-quality software from development to deployment.',
+  },
+  {
+    icon: '⚡',
+    title: 'Agile Mindset',
+    details:
+      'Experienced working in Agile/Scrum teams with iterative development, continuous improvement, and effective collaboration.',
+  },
+];
 
-  ];
+export default function SoftSkills() {
+  const [collapse, setCollapse] = useState(true);
+
   return (
     <div>
-      <p className="text-sm  text-gray-600">skills/my-soft-skills</p>
+      <p className="text-sm text-gray-600">Skills/soft-skills</p>
+
       <button
         className="w-full text-left py-1 text-blue-800 hover:underline text-xl flex justify-between"
-        onClick={() => toggleCollapse()}
+        onClick={() => setCollapse(!collapse)}
         type="button"
       >
-        Skills: My Soft Skills Set
+        Skills: My Soft Skills
       </button>
-      <p className="text-sm  text-gray-600">
-        Remote work, Pair-Programing, Teamwork, Mentoring, Cross-team Collaboration,
-        Cross-functional Team Leadership, Project Management, Time Management, Problem-Solving,
+
+      <p className="text-sm text-gray-600">
+        Problem Solving, Team Collaboration, Communication, Leadership,
+        Mentoring, Agile/Scrum, Ownership, Adaptability, Time Management,
         Continuous Learning
       </p>
-      <div
-        className={`transition-all duration-300 my-5  ${
-          collapse ? 'max-h-0 mt-0 mb-0 overflow-hidden' : ' mb-3'
-        } text-gray-600 rounded-md `}
-      >
-        <p>
-          I am dedicated to enhancing my soft skills, and my journey,
-          particularly at Microverse, has allowed me to significantly
-          enhance my communication and collaboration abilities.
-          I excel in larger teams and multicultural environments,
-          and I&apos;m constantly seeking ways to further develop my soft skills.
-        </p>
-        <ul className="">
-          {softSkills.map((skill) => (
-            <li key={skill.title} className="my-2">
-              <b>
-                {skill.title}
-                :
-              </b>
-              <p>{skill.details}</p>
-            </li>
-          ))}
-        </ul>
 
+      <div
+        className={`transition-all duration-300 my-5 ${
+          collapse ? 'max-h-0 overflow-hidden mt-0 mb-0' : 'mb-3'
+        } text-gray-600 rounded-md`}
+      >
+        <p className="mb-6">
+          I believe great software is built through strong collaboration,
+          effective communication, and continuous learning. Throughout my
+          professional experience and my time at Microverse, I have worked in
+          multicultural and distributed teams where I strengthened my teamwork,
+          leadership, and problem-solving skills while delivering high-quality
+          software solutions.
+        </p>
+
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-2">
+          {softSkills.map((skill) => (
+            <div
+              key={skill.title}
+              className="rounded-lg border border-gray-200 p-5 shadow-sm hover:shadow-md transition-shadow"
+            >
+              <h3 className="text-lg font-semibold mb-2">
+                <span className="mr-2 text-2xl">{skill.icon}</span>
+                {skill.title}
+              </h3>
+
+              <p className="text-sm text-gray-600 leading-6">{skill.details}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

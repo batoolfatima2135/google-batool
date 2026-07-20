@@ -3,175 +3,117 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 
+const skillGroups = [
+  {
+    title: 'Frontend',
+    skills: [
+      { image: '/techstack/html.png', name: 'HTML' },
+      { image: '/techstack/css.png', name: 'CSS' },
+      { image: '/techstack/javascript.png', name: 'JavaScript' },
+      { image: '/techstack/typescript.png', name: 'TypeScript' },
+      { image: '/techstack/react.png', name: 'React' },
+      { image: '/techstack/nextjs.png', name: 'Next.js' },
+      { image: '/techstack/redux.png', name: 'Redux Toolkit' },
+      { image: '/techstack/tailwind.png', name: 'Tailwind CSS' },
+      { image: '/techstack/bootstrap.png', name: 'Bootstrap' },
+      { image: '/techstack/mui.png', name: 'Material UI' },
+      { image: '/techstack/ant-design.png', name: 'Ant Design' },
+      { image: '/techstack/gsap.png', name: 'GSAP' },
+    ],
+  },
+
+  {
+    title: 'Backend',
+    skills: [
+      { image: '/techstack/csharp.png', name: 'C#' },
+      { image: '/techstack/aspnet.png', name: 'ASP.NET' },
+
+      { image: '/techstack/mysql.png', name: 'MySQL' },
+      { image: '/techstack/postgresql.png', name: 'PostgreSQL' },
+      { image: '/techstack/keycloak.png', name: 'Keycloak' },
+      { image: '/techstack/stripe.png', name: 'Stripe' },
+    ],
+  },
+
+  {
+    title: 'Tools & DevOps',
+    skills: [
+      { image: '/techstack/git.png', name: 'Git' },
+      { image: '/techstack/github.png', name: 'GitHub' },
+      {
+        image: '/techstack/chrome-devtool.png',
+        name: 'Chrome DevTools',
+      },
+      { image: '/techstack/jest.png', name: 'Jest' },
+      { image: '/techstack/eslint.png', name: 'ESLint' },
+      { image: '/techstack/sonarqube.png', name: 'SonarQube' },
+      { image: '/techstack/stylelint.png', name: 'Stylelint' },
+      { image: '/techstack/aws.png', name: 'AWS' },
+      { image: '/techstack/jira.png', name: 'Jira' },
+      { image: '/techstack/confluence.png', name: 'Confluence' },
+    ],
+  },
+];
+
 export default function TechnicalSkills() {
-  const [collapse, setcollapse] = useState(true);
-  const toggleCollapse = () => {
-    setcollapse(!collapse);
-  };
-  const tools = [
-    {
-      id: 0,
-      image: '/techstack/git.png',
-      name: 'Git',
-    },
-    {
-      id: 1,
-      image: '/techstack/github.png',
-      name: 'GitHub',
-    },
-    {
-      id: 2,
-      image: '/techstack/stylelint.png',
-      name: 'Stylelint',
-    },
-    {
-      id: 3,
-      image: '/techstack/eslint.png',
-      name: 'ESLint',
-    },
-    {
-      id: 4,
-      image: '/techstack/rubocop.png',
-      name: 'RuboCop',
-    },
-    {
-      id: 5,
-      image: '/techstack/chrome-devtool.png',
-      name: 'Chrome dev',
-    },
-    {
-      id: 6,
-      image: '/techstack/rest.png',
-      name: 'RESTful API',
-    }];
-  const techstack = [
-    {
-      id: 0,
-      image: '/techstack/html.png',
-      name: 'HTML',
-    },
-    {
-      id: 1,
-      image: '/techstack/css.png',
-      name: 'CSS',
-    },
-    {
-      id: 2,
-      image: '/techstack/tailwind.png',
-      name: 'Tailwind',
-    },
-    {
-      id: 3,
-      image: '/techstack/bootstrap.png',
-      name: 'Bootstrap',
-    },
-    {
-      id: 4,
-      image: '/techstack/javascript.png',
-      name: 'JavaScript',
-    },
-    {
-      id: 5,
-      image: '/techstack/jest.png',
-      name: 'Jest',
-    },
-    {
-      id: 6,
-      image: '/techstack/webpack.png',
-      name: 'Webpack',
-    },
-    {
-      id: 7,
-      image: '/techstack/react.png',
-      name: 'React',
-    },
-    {
-      id: 8,
-      image: '/techstack/redux.png',
-      name: 'Redux toolkit',
-    },
-    {
-      id: 9,
-      image: '/techstack/nextjs.png',
-      name: 'Next.js',
-    },
-    {
-      id: 10,
-      image: '/techstack/postgresql.png',
-      name: 'Postgresql',
-    },
-    {
-      id: 11,
-      image: '/techstack/ruby.png',
-      name: 'Ruby',
-    },
-    {
-      id: 12,
-      image: '/techstack/rspec.png',
-      name: 'RSpec',
-    },
-    {
-      id: 13,
-      image: '/techstack/rubyonrails.png',
-      name: 'Ruby on Rails',
-    },
-  ];
+  const [collapse, setCollapse] = useState(true);
+
   return (
     <div>
-      <p className="text-sm  text-gray-600">skills/my-technical-skills</p>
+      <p className="text-sm text-gray-600">skills/my-technical-skills</p>
+
       <button
         className="w-full text-left py-1 text-blue-800 hover:underline text-xl flex justify-between"
-        onClick={() => toggleCollapse()}
+        onClick={() => setCollapse(!collapse)}
         type="button"
       >
         Skills: My Technical Skills Set
       </button>
-      <p className="text-sm  text-gray-600">
-        JavaScript, React, Redux, Bootstrap, Tailwind, Postgresql, Ruby, Ruby on Rails,
-        Bootstrap, next.js, Ruby on Rails, Git, GitHub, Chrome Dev Tools, ESLint, Stylelint, RuboCop
+
+      <p className="text-sm text-gray-600">
+        Full Stack Development, Frontend Engineering, Backend Development, REST
+        APIs, Database Management, Testing, DevOps Tools, Agile Development
       </p>
+
       <div
-        className={`transition-all duration-300 my-5  ${
-          collapse ? 'max-h-0 mt-0 mb-0 overflow-hidden' : ' mb-3'
-        } text-gray-600 rounded-md `}
+        className={`transition-all duration-300 my-5 ${
+          collapse ? 'max-h-0 overflow-hidden mt-0 mb-0' : 'mb-3'
+        } text-gray-600`}
       >
-        <p>
-          I have a strong desire to keep learning new technologies because I believe learning
-          should never end. My goal is to keep learning and getting better, but for now,
-          here&apos;s a glimpse of my current technical skills.
+        <p className="mb-6">
+          I continuously improve my technical skills by working with modern
+          frontend and backend technologies. My experience includes building
+          scalable web applications, designing REST APIs, implementing
+          authentication and payment solutions, writing maintainable code, and
+          following modern development practices.
         </p>
-        <div>
-          <h2 className=" md:text-lg text-lg font-semibold my-2">Techstack:</h2>
-          <div className="grid grid-cols-4 lg:grid-cols-8 justify-center align-middle">
-            {techstack.map((tech) => (
-              <div className="flex flex-col col items-center mb-4" key={tech.id}>
-                <Image
-                  src={tech.image}
-                  alt={tech.name}
-                  width={35}
-                  height={35}
-                />
-                <p className="text-sm text-center">{tech.name}</p>
-              </div>
-            ))}
+
+        {skillGroups.map((group) => (
+          <div key={group.title} className="mb-8">
+            <h2 className="text-lg font-semibold mb-4">{group.title}</h2>
+
+            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-6">
+              {group.skills.map((skill) => (
+                <div
+                  key={skill.name}
+                  className="flex flex-col items-center text-center"
+                >
+                  <div className="h-14 flex items-center justify-center">
+                    <Image
+                      src={skill.image}
+                      alt={skill.name}
+                      width={40}
+                      height={40}
+                      className="object-contain"
+                    />
+                  </div>
+
+                  <p className="text-sm mt-2">{skill.name}</p>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-        <div>
-          <h2 className=" md:text-lg text-lg font-semibold my-2">Tools:</h2>
-          <div className="grid grid-cols-4 lg:grid-cols-8 justify-center align-middle">
-            {tools.map((tool) => (
-              <div className="flex flex-col col items-center mr-3 my-2" key={tool.id}>
-                <Image
-                  src={tool.image}
-                  alt={tool.name}
-                  width={35}
-                  height={35}
-                />
-                <p className="text-sm text-center">{tool.name}</p>
-              </div>
-            ))}
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );

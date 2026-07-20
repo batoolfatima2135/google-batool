@@ -3,6 +3,7 @@ import Navbar from '../Components/Home/Navbar';
 import Input from '../Components/Home/Input';
 import Buttons from '../Components/Home/Buttons';
 import Footer from '../Components/Home/Footer';
+import { resume } from '@/static/links';
 
 export default function Home() {
   return (
@@ -18,11 +19,12 @@ export default function Home() {
           <Buttons />
           <p className=" text-xs lg:text-sm m-3">
             Google offered in:
-            <a href="./Batool_Fatima_Resume.pdf" target="_blank" className="text-blue-900">Batool</a>
+            <a href={resume} target="_blank" className="text-blue-900">
+              Batool
+            </a>
           </p>
         </main>
       </div>
-      <p className=" text-xs lg:text-sm text-gray-900 p-5">Pakistan</p>
       <Footer />
     </div>
   );

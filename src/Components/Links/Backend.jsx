@@ -3,75 +3,70 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 
-export default function Frontend() {
-  const [collapse, setcollapse] = useState(true);
-  const toggleCollapse = () => {
-    setcollapse(!collapse);
-  };
+const backendSkills = [
+  { name: 'C#', icon: '/techstack/csharp.png' },
+  { name: 'ASP.NET', icon: '/techstack/aspnet.png' },
+  { name: 'MySQL', icon: '/techstack/mysql.png' },
+  { name: 'PostgreSQL', icon: '/techstack/postgresql.png' },
+  { name: 'Keycloak', icon: '/techstack/keycloak.png' },
+  { name: 'Stripe', icon: '/techstack/stripe.png' },
+];
+
+export default function Backend() {
+  const [collapse, setCollapse] = useState(true);
+
   return (
     <div>
-      <p className="text-sm  text-gray-600">Skills/backend-skills</p>
+      <p className="text-sm text-gray-600">Skills/backend-skills</p>
+
       <button
         className="w-full text-left py-1 text-blue-800 hover:underline text-xl flex justify-between"
-        onClick={() => toggleCollapse()}
+        onClick={() => setCollapse(!collapse)}
         type="button"
       >
         Skills: My Backend Skills Set
       </button>
-      <p className="text-sm  text-gray-600">
-        For backend my expertise include Ruby, Ruby on Rails and postgresql which allow me create
-        efficiant web-applications
+
+      <p className="text-sm text-gray-600">
+        My backend expertise includes C#, ASP.NET, Node.js, REST APIs,
+        authentication with Keycloak, payment integration using Stripe, and
+        relational databases.
       </p>
+
       <div
-        className={`transition-all duration-300 my-5  ${
-          collapse ? 'max-h-0 mt-0 mb-0 overflow-hidden' : ' mb-3'
-        } text-gray-600 rounded-md `}
+        className={`transition-all duration-300 my-5 ${
+          collapse ? 'max-h-0 overflow-hidden mt-0 mb-0' : 'mb-3'
+        } text-gray-600 rounded-md`}
       >
         <p>
-          I possess a solid grasp of Ruby and uses its capabilities with
-          Ruby on Rails framework to  develop  web application backends.
-          I specialize in working with PostgreSQL and testing tool RSpec
-          , ensuring the creation of powerful
-          and highly functional backend systems.
+          I develop secure and scalable backend applications using C# and
+          ASP.NET while following clean architecture principles and RESTful API
+          design. My experience includes building and integrating REST APIs,
+          implementing authentication and authorization with Keycloak,
+          integrating Stripe for payment processing, and working with MySQL and
+          PostgreSQL databases. I also use Node.js to develop reliable backend
+          services when needed.
         </p>
 
-        <div className="grid grid-cols-4 md:grid-cols-4 lg:grid-cols-7 my-5 ">
-          <div className="m-2  lg:m-3 text-center">
-            <Image
-              className="mx-auto"
-              src="/techstack/ruby.png"
-              width={45}
-              height={45}
-            />
-            <p className="text-center">Ruby</p>
-          </div>
-          <div className="m-2  lg:m-3 text-center">
-            <Image
-              className="mx-auto"
-              src="/techstack/rubyonrails.png"
-              width={45}
-              height={45}
-            />
-            <p>Ruby on Rails</p>
-          </div>
-          <div className="m-2  lg:m-3 text-center">
-            <Image
-              className="mx-auto"
-              src="/techstack/postgresql.png"
-              width={45}
-              height={45}
-            />
-            <p>PostgreSQL</p>
-          </div>
-          <div className="m-2  lg:m-3 text-center">
-            <Image
-              className="mx-auto text-center"
-              src="/techstack/rspec.png"
-              width={45}
-              height={45}
-            />
-            <p>RSpec</p>
-          </div>
+        <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-7 gap-6 my-6">
+          {backendSkills.map((skill) => (
+            <div
+              key={skill.name}
+              className="flex flex-col items-center text-center"
+            >
+              <div className="h-14 flex items-center justify-center">
+                <Image
+                  src={skill.icon}
+                  alt={skill.name}
+                  width={45}
+                  height={45}
+                  className="object-contain"
+                />
+              </div>
+
+              <p className="mt-2 text-sm">{skill.name}</p>
+            </div>
+          ))}
         </div>
       </div>
     </div>
