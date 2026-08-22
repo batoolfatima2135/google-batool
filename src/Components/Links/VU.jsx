@@ -19,16 +19,16 @@ export default function VU() {
         Education: My journey at Virtual University of Pakistan
       </button>
       <p className="text-sm  text-gray-600">
-        E-Learning Providers,
-        the Virtual University, Pakistan&apos;s
-        first University based completely on modern Information and Communication Technologies.
+        E-Learning Providers, the Virtual University, Pakistan&apos;s first
+        University based completely on modern Information and Communication
+        Technologies.
       </p>
       <div
         className={`transition-all duration-300 my-5  ${
           collapse ? 'max-h-0 mt-0 mb-0 overflow-hidden' : ' mb-3'
         } text-gray-600 rounded-md `}
       >
-        <a href="https://www.vu.edu.pk"  target='_blank' className="my-1">
+        <a href="https://www.vu.edu.pk" target="_blank" className="my-1">
           <div className="flex my-4 items-center">
             <Image
               src="/vu.png"
@@ -42,27 +42,27 @@ export default function VU() {
           </div>
         </a>
 
-        <ul className="list-disc list-outside">
-          <b> Expected graduation: Nov 2024</b>
+        <ul className="list-disc mx-5">
           <li className="my-2">
-            Doing Associate Degree in Computer Science from  Virtual University of Pakistan.
-            This comprehensive two-year program is equipped  with a strong foundation in the
-            field of computer science and a wide range of practical skills.
+            Associate Degree in Computer Science from Virtual University of
+            Pakistan. This comprehensive two-year program is equipped with a
+            strong foundation in the field of computer science and a wide range
+            of practical skills.
           </li>
           <li className="my-2">
-            Learning through an online platform, which not
-            only demonstrates my adaptability and self-discipline but also underlines my ability to
+            Learnt through an online platform, which not only demonstrates my
+            adaptability and self-discipline but also underlines my ability to
             excel in a flexible, technology-driven learning environment.
           </li>
           <li className="my-2">
-            Delving into various core areas of computer science,
-            including programming languages, data structures, algorithms, and software engineering.
-            This educational experience has enriched me with invaluable practical skills,
-            particularly in coding, problem-solving, and a deep understanding
-            of computer science principles.
+            Delved into various core areas of computer science, including
+            programming languages, data structures, algorithms, and software
+            engineering. This educational experience has enriched me with
+            invaluable practical skills, particularly in coding,
+            problem-solving, and a deep understanding of computer science
+            principles.
           </li>
         </ul>
-
       </div>
     </div>
   );

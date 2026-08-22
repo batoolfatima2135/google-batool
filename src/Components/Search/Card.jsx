@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
+import { email, resume, socialLinks } from '@/static/links';
 
 export default function Card() {
   return (
@@ -18,8 +19,8 @@ export default function Card() {
         </h1>
         <p className="text-sm">
           Greetings, fellow professionals! I&apos;m
-          <b> Batool Fatima</b>
-          , a Full-stack developer, ready to embark on new challenges.
+          <b> Batool Fatima Zaidi</b>
+          , a software engineer, ready to embark on new challenges.
           I love to think out of the box and love to take challenges.
           From front-end aesthetics to back-end functionalities,
           I strive for excellence in every line of code I write.
@@ -27,44 +28,50 @@ export default function Card() {
         <br />
         <p className="text-sm my-1">
           <b>Frontend: </b>
-          JavaScript, React, Redux, Bootstrap, Tailwind,
+            HTML, CSS, JavaScript, TypeScript, React, Next.js, Redux, GSAP, Tailwind CSS, Bootstrap, MUI, Ant Design <br/>
         </p>
         <p className="text-sm my-1">
           <b>Backend: </b>
-          Postgresql, Ruby, Ruby on Rails
+          C#, ASP.NET, ABP, Node, REST APIs
         </p>
         <p className="text-sm my-1">
-          <b>Frameworks: </b>
-          Bootstrap, next.js, Ruby on Rails
+          <b>Databases: </b>
+           MySQL, PostgreSQL
         </p>
         <p className="text-sm my-1">
-          <b>Tools & methods: </b>
-          Git, GitHub, Chrome Dev Tools, ESLint, Stylelint, RuboCop
+          <b>Testing: </b>
+           React testing library, Jest
         </p>
         <p className="text-sm my-1">
-          <b>Professional: </b>
-          Remote work, Pair-Programing, Teamwork, Mentoring
+          <b>Tools & DevOps: </b>
+          Git, GitHub, Chrome Dev Tools, ESlint, Stylelint, AWS, CI/CD, Jira, Confluence
+
+        </p>
+        <p className="text-sm my-1">
+          <b>Methods: </b>
+          Agile/Scrum, TDD, Responsive & mobile-first development, HTTP/REST, SOLID
+
         </p>
 
         <p className="text-sm my-1 mt-4">
           <b>Resume: </b>
-          <a href="./Batool_Fatima_Resume.pdf" target="_blank" className="text-blue-600 underline hover:text-blue-800 hover:underline visited:text-purple-600">download</a>
+          <a href={resume} target="_blank" className="text-blue-600 underline hover:text-blue-800 hover:underline visited:text-purple-600">download</a>
         </p>
         <p className="text-sm my-1">
           <b>Email: </b>
-          <a href="mailto:batoolfatima2135@gmail.com" target="_blank" className="text-blue-600 underline hover:text-blue-800 hover:underline visited:text-purple-600" rel="noreferrer">batoolfatima2135@gmail.com</a>
+          <a href={email} className="text-blue-600 underline hover:text-blue-800 hover:underline visited:text-purple-600">batoolfatima2135@gmail.com</a>
         </p>
         <p className="text-sm my-1">
           <b>LinkedIn: </b>
-          <a href="https://www.linkedin.com/in/batoolfatima2135/" target="_blank" className="text-blue-600 underline hover:text-blue-800 hover:underline visited:text-purple-600" rel="noreferrer"> in/batoolfatima2135/</a>
+          <a href={socialLinks.linkedIn} target="_blank" className="text-blue-600 underline hover:text-blue-800 hover:underline visited:text-purple-600" rel="noreferrer"> in/batoolfatima2135/</a>
         </p>
         <p className="text-sm my-1">
           <b>Github: </b>
-          <a href="https://github.com/batoolfatima2135" target="_blank" className="text-blue-600 underline hover:text-blue-800 hover:underline visited:text-purple-600" rel="noreferrer"> github.com/batoolfatima2135</a>
+          <a href={socialLinks.github} target="_blank" className="text-blue-600 underline hover:text-blue-800 hover:underline visited:text-purple-600" rel="noreferrer"> github.com/batoolfatima2135</a>
         </p>
         <p className="text-sm my-1">
           <b>Youtube: </b>
-          <a href="https://www.youtube.com/channel/UCFlLhnJS3lXB6JATy8QFrrg" target="_blank" className="text-blue-600 underline hover:text-blue-800 hover:underline visited:text-purple-600" rel="noreferrer"> youtube.com/channel/</a>
+          <a href={socialLinks.youtube} target="_blank" className="text-blue-600 underline hover:text-blue-800 hover:underline visited:text-purple-600" rel="noreferrer"> youtube.com/channel/</a>
         </p>
       </div>
 
